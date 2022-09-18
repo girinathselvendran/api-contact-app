@@ -1,5 +1,5 @@
 const express = require("express");
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const app = express();
 const cors = require("cors");
 // const routes = require("./routes/routes");
@@ -22,7 +22,7 @@ app.listen(port, (err) => {
 });
 
 //mongoose connection
-mongoose.connect(process.env.MONGODB_URL, (err) => {
-  if (err) throw err;
-  console.log("Database Connected");
-});
+// mongoose.connect(process.env.MONGODB_URL, (err) => {
+//   if (err) throw err;
+//   console.log("Database Connected");
+// });
